@@ -1,0 +1,61 @@
+<h3 class="text-center mt-4 mb-5">create-profile</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+        <div class="form-group">
+          <label for="" class="font-weight-bold">Frist_Name</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="FirstName"
+            placeholder="Enter FristName"
+          />
+        </div>
+        <div class="form-group">
+          <label for="" class="font-weight-bold">LastName</label>
+          <input
+            type="text"
+            class="form-control"
+            formControlName="LastName"
+            placeholder="Enter LastName"
+          />
+        </div>
+        <div class="form-group">
+          <label for="" class="font-weight-bold">EmailId</label>
+          <input
+            type="email"
+            class="form-control"
+            formControlName="EmailId"
+            placeholder="Enter EmailId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="" class="font-weight-bold">password</label>
+          <input
+            type="password"
+            class="form-control"
+            formControlName="password"
+            placeholder="Enter password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="" class="font-weight-bold">confirm_password</label>
+          <input
+            type="password"
+            class="form-control"
+            formControlName="confirmpassword"
+            placeholder="Enter confirmpassword"
+          />
+        </div>
+        <div class="text-center">
+          <!-- <button class="btn btn-primary" routerLink="/read_profile">Create</button> -->
+          <button class="btn btn-primary">Create</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

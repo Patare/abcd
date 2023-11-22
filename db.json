@@ -1,0 +1,78 @@
+{
+  "posts": [
+    {
+      "FirstName": "Kalyan",
+      "LastName": "Patare",
+      "EmailId": "kalyan@gmail.com",
+      "password": "kalyan",
+      "confirmpassword": "kalyan",
+      "id": 1
+    },
+    {
+      "FirstName": "Ram",
+      "LastName": "patare",
+      "EmailId": "rampatare9@gmail.com",
+      "password": "ghmghj",
+      "confirmpassword": "ghmghj",
+      "id": 2
+    },
+    {
+      "FirstName": "gaurav",
+      "LastName": "patare",
+      "EmailId": "gaurav@gmail.com",
+      "password": "rtyuio",
+      "confirmpassword": "tryuij",
+      "id": 3
+    },
+    {
+      "FirstName": "tushar",
+      "LastName": "dhotre",
+      "EmailId": "tushar@gmail.com",
+      "password": "cvghjkl",
+      "confirmpassword": "cvghjkl",
+      "id": 4
+    },
+    {
+      "FirstName": "Tushar",
+      "LastName": "Dhotre",
+      "EmailId": "tushar@gmail.com",
+      "password": "fghj",
+      "confirmpassword": "fghj",
+      "id": 5
+    },
+    {
+      "FirstName": "kalyan",
+      "LastName": "patare",
+      "EmailId": "kalyan@gmail.com",
+      "password": "sugfhj",
+      "confirmpassword": "hgjn,m",
+      "id": 6
+    },
+    {
+      "FirstName": "kiran",
+      "LastName": "patare",
+      "EmailId": "kiran@gmail.com",
+      "password": "svnasdj",
+      "confirmpassword": "fbhajfaf",
+      "id": 7
+    },
+    {
+      "FirstName": "vishal",
+      "LastName": "patare",
+      "EmailId": "rahul@gamil.com",
+      "password": "ffnfa",
+      "confirmpassword": "fisfk",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

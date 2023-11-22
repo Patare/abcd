@@ -1,0 +1,24 @@
+nav img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+nav{
+    background-color: rgb(201, 230, 230);
+    padding: 10px;
+}
+ul{
+   float: right;
+   list-style-type: none;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+li a{
+    color: rgb(66, 39, 4);
+    text-decoration: none;
+    cursor: pointer;
+}

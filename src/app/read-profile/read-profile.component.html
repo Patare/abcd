@@ -1,0 +1,26 @@
+<h3 class="text-center">read_profile</h3>
+<!-- <a routerLink="/create_profile" class="mt-4 mb-4" (click)="home_page()">Home Page</a> -->
+<table border="1" [width]="100" class="text-center w-100 text-dark bg-light">
+    <tr>
+        <th>ID</th>
+        <th>F_Name</th>
+        <th>L_Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>C_Password</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let userlist of list">
+        <td>{{userlist.id}}</td>
+        <td>{{userlist.FirstName}}</td>
+        <td>{{userlist.LastName}}</td>
+        <td>{{userlist.EmailId}}</td>
+        <td>{{userlist.password}}</td>
+        <td>{{userlist.confirmpassword}}</td>
+        <td><button routerLink="/update_profile/{{userlist.id}}" class="btn btn-primary">Update</button>
+        <button r class="btn btn-danger ml-2" (click)="deleteForm(userlist.id)">Delete</button>
+        </td>
+    </tr>
+</table>
+
+

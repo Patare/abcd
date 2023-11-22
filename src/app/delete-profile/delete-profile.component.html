@@ -1,0 +1,55 @@
+<p>delete-profile works!</p>
+<div *ngIf="display">
+    <ul [style.background]="background" *ngFor="let user of usres">
+        <li >{{user.name}}</li>
+        <li>{{user.phone}}</li>
+        <ul *ngFor="let media of user.social">
+            <li [style.color]="color">{{media}}</li>
+        </ul>
+    </ul>
+</div>
+<button (click)="buttonclick()">color</button>
+<button (click)="togglebut()">toggle</button>   
+
+
+<!-- To Do List -->
+
+<br><br><br>
+<input type="text" placeholder="enter name" #task />
+<br><br>
+<button (click)="adddata(task.value)">Add</button>
+<br>
+<ul *ngFor="let item of list">
+    <li>{{item.name}}
+    <button (click)="removelist(item.id)">Remove</button></li>
+</ul>
+<br><br><br>
+
+
+
+<!-- two way data binding -->
+<input type="text" [(ngModel)]="name"  />
+<h3>{{name}}</h3>
+<br><br><br>
+
+
+<!-- useing pipes -->
+<h2>{{Fname | uppercase}}</h2>
+<h2>{{Fname | lowercase}}</h2>
+<h2>{{Fname | lowercase | slice :2:9}}</h2>
+<h4>{{date | date : 'fullDate'}}</h4>
+<h4>{{20 | currency :'INR'}}</h4>
+<h4>{{20 | currency :'USD'}}</h4>
+<h4>{{20 | currency :'GBP'}}</h4>
+
+
+
+
+<!-- Templete Driven Form -->
+<form #loginForm="ngForm" (ngSubmit)=userlogin(loginForm.value)>
+<input type="text" placeholder="enter name" name="name" ngModel/>
+<br><br>
+<input type="password" placeholder="enter password" name="password" ngModel/>
+<br><br>
+<button>login</button>
+</form>
